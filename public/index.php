@@ -13,4 +13,8 @@ $app->get('/', function() use($app, $dm)
 	$app->render('main.html');
 });
 
+$app->get('/branches', function() use($app, $dm) {
+	render_json(array("name" => "sandae"));
+});
+
 $app->run();

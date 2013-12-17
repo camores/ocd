@@ -13,6 +13,9 @@
 	"autoload": {
 		"psr-0": { 
 			"Model\\": "lib/"
-		}
+		},
+		"files": [
+			"lib/Util.php"
+		]
 	}
 }
