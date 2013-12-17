@@ -14,7 +14,16 @@ $app->get('/', function() use($app, $dm)
 });
 
 $app->get('/branches', function() use($app, $dm) {
-	render_json(array("name" => "sandae"));
+	render_json(array(
+		array(
+			"id" 	=> 1234,
+			"name" 	=> "master-IE-224"
+		),
+		array(
+			"id" 	=> 1235,
+			"name" 	=> "master-IE-225"
+		)
+	));
 });
 
 $app->run();
