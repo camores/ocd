@@ -5,7 +5,7 @@ Setting Up
 
  * curl -sS https://getcomposer.org/installer | php
  * Node must be installed
- * cd app && composer.phar install
+ * cd app && COMPOSER_PROCESS_TIMEOUT=3000000 composer.phar install
  * cd client && npm install
  * Re-creating the database
  * cd public

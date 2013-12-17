@@ -8,9 +8,9 @@ $app = new \Slim\Slim(array(
 	'log.writer' => new \Slim\Extras\Log\DateTimeFileWriter(array( 'path' => '../logs', 'name_format' => 'Y-m-d' ) )
 ));
 
-$app->get('/', function() use($app, $em) 
+$app->get('/', function() use($app, $dm) 
 {
-	$app->render('index.html');
+	$app->render('main.html');
 });
 
 $app->run();

@@ -1,0 +1,48 @@
+ERROR - 2013-12-16T18:58:30-08:00 - exception 'ErrorException' with message 'Missing argument 1 for Model\User::__construct(), called in /Users/smacalalag/Sites/ocd/public/index.php on line 13 and defined' in /Users/smacalalag/Sites/ocd/app/lib/Model/User.php:32
+Stack trace:
+#0 /Users/smacalalag/Sites/ocd/app/lib/Model/User.php(32): Slim\Slim::handleErrors(2, 'Missing argumen...', '/Users/smacalal...', 32, Array)
+#1 /Users/smacalalag/Sites/ocd/public/index.php(13): Model\User->__construct()
+#2 [internal function]: {closure}()
+#3 /Users/smacalalag/Sites/ocd/app/vendor/slim/slim/Slim/Route.php(441): call_user_func_array(Object(Closure), Array)
+#4 /Users/smacalalag/Sites/ocd/app/vendor/slim/slim/Slim/Slim.php(1314): Slim\Route->dispatch()
+#5 /Users/smacalalag/Sites/ocd/app/vendor/slim/slim/Slim/Middleware/Flash.php(85): Slim\Slim->call()
+#6 /Users/smacalalag/Sites/ocd/app/vendor/slim/slim/Slim/Middleware/MethodOverride.php(92): Slim\Middleware\Flash->call()
+#7 /Users/smacalalag/Sites/ocd/app/vendor/slim/slim/Slim/Middleware/PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#8 /Users/smacalalag/Sites/ocd/app/vendor/slim/slim/Slim/Slim.php(1261): Slim\Middleware\PrettyExceptions->call()
+#9 /Users/smacalalag/Sites/ocd/public/index.php(24): Slim\Slim->run()
+#10 {main}
+ERROR - 2013-12-16T18:59:26-08:00 - exception 'Doctrine\Common\Persistence\Mapping\MappingException' with message 'Class 'Model\Branches' does not exist' in /Users/smacalalag/Sites/ocd/app/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/MappingException.php:96
+Stack trace:
+#0 /Users/smacalalag/Sites/ocd/app/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/RuntimeReflectionService.php(40): Doctrine\Common\Persistence\Mapping\MappingException::nonExistingClass('Model\Branches')
+#1 /Users/smacalalag/Sites/ocd/app/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php(267): Doctrine\Common\Persistence\Mapping\RuntimeReflectionService->getParentClasses('Model\Branches')
+#2 /Users/smacalalag/Sites/ocd/app/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php(297): Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->getParentClasses('Model\Branches')
+#3 /Users/smacalalag/Sites/ocd/app/vendor/doctrine/common/lib/Doctrine/Common/Persistence/Mapping/AbstractClassMetadataFactory.php(218): Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->loadMetadata('Model\Branches')
+#4 /Users/smacalalag/Sites/ocd/app/vendor/doctrine/mongodb-odm/lib/Doctrine/ODM/MongoDB/DocumentManager.php(278): Doctrine\Common\Persistence\Mapping\AbstractClassMetadataFactory->getMetadataFor('Model\Branches')
+#5 /Users/smacalalag/Sites/ocd/app/vendor/doctrine/mongodb-odm/lib/Doctrine/ODM/MongoDB/UnitOfWork.php(1293): Doctrine\ODM\MongoDB\DocumentManager->getClassMetadata('Model\Branches')
+#6 /Users/smacalalag/Sites/ocd/app/vendor/doctrine/mongodb-odm/lib/Doctrine/ODM/MongoDB/UnitOfWork.php(416): Doctrine\ODM\MongoDB\UnitOfWork->getCommitOrder()
+#7 /Users/smacalalag/Sites/ocd/app/vendor/doctrine/mongodb-odm/lib/Doctrine/ODM/MongoDB/DocumentManager.php(531): Doctrine\ODM\MongoDB\UnitOfWork->commit(NULL, Array)
+#8 /Users/smacalalag/Sites/ocd/public/index.php(15): Doctrine\ODM\MongoDB\DocumentManager->flush()
+#9 [internal function]: {closure}()
+#10 /Users/smacalalag/Sites/ocd/app/vendor/slim/slim/Slim/Route.php(441): call_user_func_array(Object(Closure), Array)
+#11 /Users/smacalalag/Sites/ocd/app/vendor/slim/slim/Slim/Slim.php(1314): Slim\Route->dispatch()
+#12 /Users/smacalalag/Sites/ocd/app/vendor/slim/slim/Slim/Middleware/Flash.php(85): Slim\Slim->call()
+#13 /Users/smacalalag/Sites/ocd/app/vendor/slim/slim/Slim/Middleware/MethodOverride.php(92): Slim\Middleware\Flash->call()
+#14 /Users/smacalalag/Sites/ocd/app/vendor/slim/slim/Slim/Middleware/PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#15 /Users/smacalalag/Sites/ocd/app/vendor/slim/slim/Slim/Slim.php(1261): Slim\Middleware\PrettyExceptions->call()
+#16 /Users/smacalalag/Sites/ocd/public/index.php(22): Slim\Slim->run()
+#17 {main}
+ERROR - 2013-12-16T19:00:18-08:00 - exception 'RuntimeException' with message 'View cannot render `index.html` because the template does not exist' in /Users/smacalalag/Sites/ocd/app/vendor/slim/slim/Slim/View.php:272
+Stack trace:
+#0 /Users/smacalalag/Sites/ocd/app/vendor/slim/slim/Slim/View.php(255): Slim\View->render('index.html', NULL)
+#1 /Users/smacalalag/Sites/ocd/app/vendor/slim/slim/Slim/View.php(243): Slim\View->fetch('index.html', NULL)
+#2 /Users/smacalalag/Sites/ocd/app/vendor/slim/slim/Slim/Slim.php(751): Slim\View->display('index.html')
+#3 /Users/smacalalag/Sites/ocd/public/index.php(17): Slim\Slim->render('index.html')
+#4 [internal function]: {closure}()
+#5 /Users/smacalalag/Sites/ocd/app/vendor/slim/slim/Slim/Route.php(441): call_user_func_array(Object(Closure), Array)
+#6 /Users/smacalalag/Sites/ocd/app/vendor/slim/slim/Slim/Slim.php(1314): Slim\Route->dispatch()
+#7 /Users/smacalalag/Sites/ocd/app/vendor/slim/slim/Slim/Middleware/Flash.php(85): Slim\Slim->call()
+#8 /Users/smacalalag/Sites/ocd/app/vendor/slim/slim/Slim/Middleware/MethodOverride.php(92): Slim\Middleware\Flash->call()
+#9 /Users/smacalalag/Sites/ocd/app/vendor/slim/slim/Slim/Middleware/PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#10 /Users/smacalalag/Sites/ocd/app/vendor/slim/slim/Slim/Slim.php(1261): Slim\Middleware\PrettyExceptions->call()
+#11 /Users/smacalalag/Sites/ocd/public/index.php(20): Slim\Slim->run()
+#12 {main}
